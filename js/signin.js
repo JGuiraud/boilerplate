@@ -2,7 +2,6 @@ $(document).ready(function () {
     var login, password, login_validation, password_validation;
 
     $("#login").focusout(function () {
-        console.log("yay")
         login = $(this).val();
         console.log(login);
     });

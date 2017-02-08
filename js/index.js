@@ -1,9 +1,7 @@
 $(document).ready(function () {
-    $("#right").click(function () {
-        if (true) {
-            $(this).attr("href") = "welcome.html";
-        } else {
-            locate.href = "SignIn.html";
+    $("#right").on("click", function () {
+        if (localStorage.login && localStorage.password) {
+            $("#right").attr("href", "./pages/welcome.html");
         }
-    })
+    });
 })
